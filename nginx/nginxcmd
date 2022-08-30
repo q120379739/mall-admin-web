@@ -1,0 +1,5 @@
+docker run -p 80:80 -p 2080:2080 -p 8101:8101 -p 8102:8102 --name nginx \
+-v /mydata/nginx/html:/usr/share/nginx/html \
+-v /mydata/nginx/logs:/var/log/nginx  \
+-v /mydata/nginx/conf:/etc/nginx \
+-d nginx:1.23
